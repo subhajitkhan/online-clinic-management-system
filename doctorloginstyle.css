@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'arial';
+	background-color: #3498db;
+}
+
+.doclogin {
+	width: 450px;
+	height: 230px;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 180px;
+	padding: "20px";
+	background-color: #fff;
+	border:1px solid silver;
+	border-radius: 5px ;
+
+}
+
+.doclogin input {
+	width: 400px;
+	height: 35px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 3px;
+	border: 1px solid silver;
+	padding: 5px;
+}
+
+.doclogin .btnlogin {
+	width: 413px;
+	height: 35px;
+	margin-left: 10px;
+	background-color: #3498db;
+	color: #fff;
+	border-radius: 3px;
+}
+
+
+#dochead{
+	text-align: center;
+}

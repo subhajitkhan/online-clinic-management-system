@@ -1,0 +1,58 @@
+body{
+	font-family: 'arial';
+	margin: 0;
+	padding: 0;
+	/*background-color: #3498db;*/
+
+}
+
+.doctor_wrapper{
+	/*width: 530px;*/
+	height: 700px;
+	
+	font-size: 20px;
+	background-color: #fff;
+	margin-top: 30px;
+	border-radius: 5px;
+
+	padding: 10px;
+
+}
+.field  input{
+	width: 250px;
+	height: 20px;
+	padding: 5px;
+	margin-right: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+
+.field select{
+	width: 260px;
+	height: 20px;
+	padding: 5px;
+	margin-right: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+
+
+.sub input{
+	width: 200px;
+	height:40px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: 5px;
+	text-align: center;
+	margin-left: 150px;
+	background-color: #24C28D;
+	
+}
+/*.gender{
+	margin-left: 150px;
+}*/
+#head{
+	text-align: center;
+}

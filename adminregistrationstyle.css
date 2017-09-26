@@ -1,0 +1,61 @@
+body{
+	font-family: 'arial';
+	margin: 0;
+	padding: 0;
+	background-color: #3498db;
+}
+
+.pat_wrapper{
+	width: 530px;
+	height: 600px;
+	margin:auto;
+	font-size: 20px;
+	background-color: #fff;
+	margin-top: 25px;
+	border-radius: 5px;
+
+	padding: 10px;
+
+}
+.field  input{
+	width: 250px;
+	height: 20px;
+	padding: 5px;
+	margin-right: 10px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+.sub input{
+	width: 200px;
+	height:40px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: 5px;
+	text-align: center;
+	margin-left: 150px;
+	background-color: #24C28D;
+	
+}
+.gender{
+	margin-left: 150px;
+}
+#head{
+	text-align: center;
+}
+
+#login{
+	width: 200px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background-color: #FF1B04;
+	color: #fff ;
+	border-radius: 5px;
+}
+
+.loginbtn{
+	margin-left: 150px;
+}

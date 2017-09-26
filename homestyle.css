@@ -1,0 +1,175 @@
+.containertop{
+	
+	width: 100%;
+   background-color: #e9edf2;
+
+}
+
+*{
+	margin: 0px;
+	<-- padding: 0px;  -->
+}
+ .wrapper{
+ 	position: relative;
+ 	display:inline-block;
+	width: 1200px;
+	margin:auto;
+	z-index:3;
+
+}
+
+#topright{
+	float: right;
+	
+}
+
+#topsearch{
+	height: 20px;
+	border-radius: 5px;
+}
+
+#topbtn{
+	height: 20px;
+	border-radius: 5px;
+	width: 60px;
+	background-color: #24C28D;
+	font-weight: bold;
+}
+
+#makeapp{
+	width: 200px;
+	height: 30px;
+	font-size: 19px;
+	text-decoration: none;
+	display: block;
+	background-color: #FFD104;
+	text-align: center;
+	color: red;
+}
+
+#makeapp:hover{
+	background-color: #FFAF04   ;
+	color: black;
+}
+
+ul li{
+	
+	width: 170px;
+	display: inline-block;
+	height: 30px;
+	font-size: 20px;
+	
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+
+}
+ul ul li a{
+	 background-color: #0AA0C4  ; 
+	 <-- border-radius: 20px; -->
+	 font-family: Courier New;
+
+}
+
+.menubar{
+	width: 100%;
+    background-color: #0AA0C4;
+
+}
+
+ul li a:hover{
+	background-color: #FFC300 ;
+    color: black;
+
+}
+  <-- .pic{
+	
+	border:2px solid grey;
+	
+} -->
+
+.banner{
+	width: 1340px;
+	height: 348px;
+	background-size: 100% 100%;
+	animation: banner 10s infinite;
+
+}
+
+@keyframes banner{
+	0%, 30%{
+		background-image: url(CMRI-Homepage-Slider01.jpg);
+	
+		opacity: 1;
+			}
+	31%,34%{
+		opacity: 0.1;
+	}
+	35%,65%{
+		background-image: url(CMRI-Homepage-Slider02.jpg);
+		opacity: 1;
+	}
+	66%,69%{
+		opacity: 0.1;
+	}
+	70%,100%{
+		opacity: 1;
+		background-image: url(CMRI-Homepage-Slider03.jpg);
+	}
+
+}
+
+.menubar ul ul
+{
+	position: absolute;
+	display: none;
+	z-index: 3;
+	padding: 0px;
+}
+
+.menubar ul li:hover > ul
+{
+	display: block;
+	z-index: 3;
+}
+
+.menubar ul ul ul{
+	margin-left: 170px;
+	top: 0px;
+}
+
+.abtus{
+	background-color: #FFC300;
+	height: 60px;
+	
+}
+
+#abthead{
+	margin-top: 10px;
+}
+.paraabtus{
+
+	width:1200px;
+	height: 550px;
+	margin: auto;
+	font-size: 20px;
+	
+	}
+
+.collage{
+	
+	margin-left: 250px;
+	margin-bottom: 40px;
+}
+
+
+
+
