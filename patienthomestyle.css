@@ -1,0 +1,147 @@
+.containertop{
+	
+	width: 100%;
+    background-color: #e9edf2;
+
+}
+
+*{
+	margin: 0px;
+	<-- padding: 0px;  -->
+}
+ .wrapper{
+ 	position: relative;
+ 	display:inline-block;
+	width: 1200px;
+	margin:auto;
+	z-index:3;
+
+}
+
+#topright{
+	float: right;
+	
+}
+
+#topsearch{
+	height: 20px;
+	border-radius: 5px;
+}
+
+#topbtn{
+	height: 20px;
+	border-radius: 5px;
+	width: 60px;
+	background-color: #24C28D;
+	font-weight: bold;
+}
+
+#makeapp{
+	width: 200px;
+	height: 30px;
+	font-size: 19px;
+	text-decoration: none;
+	display: block;
+	background-color: #FFD104;
+	text-align: center;
+	color: red;
+}
+
+#makeapp:hover{
+	background-color: #FFAF04   ;
+	color: black;
+}
+
+ul li{
+	
+	width: 170px;
+	display: inline-block;
+	height: 30px;
+	font-size: 20px;
+	
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+
+.menubar{
+	width: 100%;
+    background-color: #0AA0C4;
+
+}
+
+
+ul li a:hover{
+	background-color: #FFC300 ;
+    color: black;
+}
+
+
+
+.pat_wrapper{
+	width: 530px;
+	height: 400px;
+	margin:auto;
+	font-size: 20px;
+	background-color: #bdc3c7;
+	margin-top: 25px;
+	border-radius: 5px;
+
+	padding: 10px;
+
+}
+
+
+.field  input{
+	width: 250px;
+	height: 20px;
+	padding: 5px;
+	margin-right: 10px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+
+
+.field  select{
+	width: 300px;
+	height: 50px;
+	padding: 5px;
+	margin-right: 10px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+
+.sub input{
+	width: 200px;
+	height:40px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: 5px;
+	text-align: center;
+	margin-left: 150px;
+	background-color: #24C28D;
+	
+}
+
+
+#head{
+	text-align: center;
+}
+
+.docdetails{
+	height: 600px;
+	width: 500px;
+	background-color: black;
+	margin: auto;
+}
