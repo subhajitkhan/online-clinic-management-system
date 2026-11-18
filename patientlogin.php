@@ -5,8 +5,11 @@
 		$pat_pswd = $_POST['pat_pswd'];
 
 
-		 $sql = "SELECT * FROM pat_registration WHERE pat_mail='$pat_mail'  AND pat_pswd = '$pat_pswd' ";
-		 $result = mysqli_query($connection, $sql);
+		 $sql = "SELECT * FROM pat_registration WHERE pat_mail=? AND pat_pswd = ?";
+		 $stmt = mysqli_prepare($connection, $sql);
+		 mysqli_stmt_bind_param($stmt, "ss", $pat_mail, $pat_pswd);
+		 mysqli_stmt_execute($stmt);
+		 $result = mysqli_stmt_get_result($stmt);
 		 $count = mysqli_num_rows($result);
 		 if($count == 1){
 

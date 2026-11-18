@@ -1,13 +1,15 @@
 <?php 
-	mysql_connect('localhost', 'root', '');
-    mysql_select_db('project');
+	require_once('connect.php');
 	if(isset($_POST) & !empty($_POST)){
 		$doc_mail = $_POST['doc_mail'];
 		$doc_pswd = $_POST['doc_pswd'];
 
-		 $sql = "SELECT * FROM doc_registration WHERE doc_mail='$doc_mail'  AND doc_pswd = '$doc_pswd' ";
-		 $result = mysql_query($sql);
-		 $count = mysql_num_rows($result);
+		 $sql = "SELECT * FROM doc_registration WHERE doc_mail=? AND doc_pswd = ?";
+		 $stmt = mysqli_prepare($connection, $sql);
+		 mysqli_stmt_bind_param($stmt, "ss", $doc_mail, $doc_pswd);
+		 mysqli_stmt_execute($stmt);
+		 $result = mysqli_stmt_get_result($stmt);
+		 $count = mysqli_num_rows($result);
 		 if($count == 1){
 		 	//$sql_name = "SELECT doc_name FROM doc_registration WHERE doc_mail='$doc_mail' " ;
 		 	//$resultname = mysqli_query($connection, $sql_name);
