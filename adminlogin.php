@@ -4,8 +4,11 @@
 		$mail = $_POST['adminmail'];
 		$pswd = $_POST['adminpswd'];
 
-		 $sql = "SELECT * FROM admin_registration WHERE mail_id='$mail'  AND password = '$pswd' ";
-		 $result = mysqli_query($connection, $sql);
+		 $sql = "SELECT * FROM admin_registration WHERE mail_id=? AND password = ?";
+		 $stmt = mysqli_prepare($connection, $sql);
+		 mysqli_stmt_bind_param($stmt, "ss", $mail, $pswd);
+		 mysqli_stmt_execute($stmt);
+		 $result = mysqli_stmt_get_result($stmt);
 		 $count = mysqli_num_rows($result);
 		 if($count == 1){
 		 session_start();
